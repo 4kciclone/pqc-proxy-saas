@@ -6,5 +6,6 @@ toolchain go1.24.11
 
 require (
 	github.com/lib/pq v1.10.9 // indirect
+	github.com/stripe/stripe-go/v76 v76.25.0 // indirect
 	golang.org/x/crypto v0.45.0 // indirect
 )

@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/4kciclone/pqc-proxy/internal/config" // Importe o config
+	"github.com/4kciclone/pqc-proxy/internal/config"
 	"github.com/4kciclone/pqc-proxy/pkg/crypto_core"
 )
 
@@ -21,7 +21,6 @@ func StartServer(port string) {
 	defer listener.Close()
 
 	fmt.Printf("🛡️  PQC Proxy (Server) ouvindo em 0.0.0.0:%s\n", port)
-	// Mostra o target inicial
 	fmt.Printf("🎯 Target Inicial: %s (Gerenciado via SaaS)\n", config.GetTarget())
 
 	for {
@@ -54,20 +53,22 @@ func handlePQCConnection(clientConn net.Conn) {
 		return
 	}
 
+	// Medindo a latência da criptografia (Importante para métricas)
+	start := time.Now()
 	sharedSecret, err := crypto_core.Decapsulate(ciphertext, sk)
 	if err != nil {
 		log.Printf("[%s] 🚨 Ataque detectado!", remoteAddr)
 		return
 	}
+	latency := time.Since(start)
 	
 	aesKey, _ := crypto_core.DeriveKey(sharedSecret, "pqc-tunnel-v1")
-	log.Printf("[%s] 🔐 Túnel PQC OK. Buscando destino...", remoteAddr)
+	log.Printf("[%s] 🔐 Túnel PQC OK (%v). Buscando destino...", remoteAddr, latency)
 
 	// ====================================================
-	// FASE 2: ROTEAMENTO DINÂMICO (Critical Update)
+	// FASE 2: ROTEAMENTO DINÂMICO
 	// ====================================================
 	
-	// Pega o destino atual da memória (atualizado pelo Agente SaaS)
 	currentTarget := config.GetTarget()
 	
 	targetConn, err := net.Dial("tcp", currentTarget)

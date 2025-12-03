@@ -12,9 +12,9 @@ RUN apt-get update && apt-get install -y \
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 
-# 3. Instalar Go (1.23)
-RUN wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz && \
-    tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
+# 3. Instalar Go (1.24)
+RUN wget https://go.dev/dl/go1.24.11.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go1.24.11.linux-amd64.tar.gz
 ENV PATH="/usr/local/go/bin:${PATH}"
 
 # 4. Compilar liboqs (A Base)

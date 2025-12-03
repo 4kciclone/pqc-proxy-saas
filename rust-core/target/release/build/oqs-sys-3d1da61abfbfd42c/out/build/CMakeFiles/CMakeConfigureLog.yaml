@@ -1,0 +1,646 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      The system is: Linux - 6.12.57+deb13-amd64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;-m64
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/3.30.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (Debian 14.2.0-19) 14.2.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1d85/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e1d85.dir/build.make CMakeFiles/cmTC_e1d85.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE'
+        Building C object CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64    -v -o CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e1d85.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e1d85.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m64 -mtune=generic -march=x86-64 -version -ffunction-sections -fdata-sections -fPIC -fasynchronous-unwind-tables -o /tmp/ccs7fZE2.s
+        GNU C17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0051dfc1fa4e89ba97760da93f2546f3
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e1d85.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o /tmp/ccs7fZE2.s
+        GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e1d85
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1d85.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64   -v -Wl,-v CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -o cmTC_e1d85
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'cmTC_e1d85' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e1d85.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc02Ca3F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e1d85 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc02Ca3F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e1d85 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'cmTC_e1d85' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e1d85.'
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/14/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1d85/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e1d85.dir/build.make CMakeFiles/cmTC_e1d85.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-cwDtgE']
+        ignore line: [Building C object CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64    -v -o CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e1d85.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e1d85.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m64 -mtune=generic -march=x86-64 -version -ffunction-sections -fdata-sections -fPIC -fasynchronous-unwind-tables -o /tmp/ccs7fZE2.s]
+        ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0051dfc1fa4e89ba97760da93f2546f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e1d85.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o /tmp/ccs7fZE2.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e1d85]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1d85.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64   -v -Wl -v CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -o cmTC_e1d85]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-m64' '-v' '-o' 'cmTC_e1d85' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e1d85.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc02Ca3F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e1d85 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc02Ca3F.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e1d85] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc02Ca3F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e1d85 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e1d85.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - ".CMake/compiler_opts.cmake:20 (check_c_compiler_flag)"
+      - "CMakeLists.txt:118 (include)"
+    checks:
+      - "Performing Test CC_SUPPORTS_WA_NOEXECSTACK"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-wws3iI"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-wws3iI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CC_SUPPORTS_WA_NOEXECSTACK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-wws3iI'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b396f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b396f.dir/build.make CMakeFiles/cmTC_b396f.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-wws3iI'
+        Building C object CMakeFiles/cmTC_b396f.dir/src.c.o
+        /usr/bin/cc -DCC_SUPPORTS_WA_NOEXECSTACK  -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE   -Wa,--noexecstack -o CMakeFiles/cmTC_b396f.dir/src.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-wws3iI/src.c
+        Linking C executable cmTC_b396f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b396f.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  CMakeFiles/cmTC_b396f.dir/src.c.o -o cmTC_b396f
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-wws3iI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - ".CMake/compiler_opts.cmake:29 (check_linker_flag)"
+      - "CMakeLists.txt:118 (include)"
+    checks:
+      - "Performing Test LD_SUPPORTS_WL_Z_NOEXECSTACK"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-KCTKIb"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-KCTKIb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "LD_SUPPORTS_WL_Z_NOEXECSTACK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-KCTKIb'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e86ac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e86ac.dir/build.make CMakeFiles/cmTC_e86ac.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-KCTKIb'
+        Building C object CMakeFiles/cmTC_e86ac.dir/src.c.o
+        /usr/bin/cc -DLD_SUPPORTS_WL_Z_NOEXECSTACK  -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE -o CMakeFiles/cmTC_e86ac.dir/src.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-KCTKIb/src.c
+        Linking C executable cmTC_e86ac
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e86ac.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  -Wl,-z,noexecstack CMakeFiles/cmTC_e86ac.dir/src.c.o -o cmTC_e86ac
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-KCTKIb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/common/CMakeLists.txt:94 (check_symbol_exists)"
+    checks:
+      - "Looking for aligned_alloc"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-Gr720N"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-Gr720N"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_ALIGNED_ALLOC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-Gr720N'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5735e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5735e.dir/build.make CMakeFiles/cmTC_5735e.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-Gr720N'
+        Building C object CMakeFiles/cmTC_5735e.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE -o CMakeFiles/cmTC_5735e.dir/CheckSymbolExists.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-Gr720N/CheckSymbolExists.c
+        Linking C executable cmTC_5735e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5735e.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  CMakeFiles/cmTC_5735e.dir/CheckSymbolExists.c.o -o cmTC_5735e
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-Gr720N'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/common/CMakeLists.txt:95 (check_symbol_exists)"
+    checks:
+      - "Looking for posix_memalign"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-K9lMnM"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-K9lMnM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_POSIX_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-K9lMnM'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_450aa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_450aa.dir/build.make CMakeFiles/cmTC_450aa.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-K9lMnM'
+        Building C object CMakeFiles/cmTC_450aa.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE -o CMakeFiles/cmTC_450aa.dir/CheckSymbolExists.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-K9lMnM/CheckSymbolExists.c
+        Linking C executable cmTC_450aa
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_450aa.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  CMakeFiles/cmTC_450aa.dir/CheckSymbolExists.c.o -o cmTC_450aa
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-K9lMnM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/common/CMakeLists.txt:96 (check_symbol_exists)"
+    checks:
+      - "Looking for memalign"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-VyiJYX"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-VyiJYX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-VyiJYX'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e3d8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8e3d8.dir/build.make CMakeFiles/cmTC_8e3d8.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-VyiJYX'
+        Building C object CMakeFiles/cmTC_8e3d8.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE -o CMakeFiles/cmTC_8e3d8.dir/CheckSymbolExists.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-VyiJYX/CheckSymbolExists.c
+        Linking C executable cmTC_8e3d8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e3d8.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  CMakeFiles/cmTC_8e3d8.dir/CheckSymbolExists.c.o -o cmTC_8e3d8
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-VyiJYX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/common/CMakeLists.txt:111 (check_symbol_exists)"
+    checks:
+      - "Looking for explicit_bzero"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-9Kk1cR"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-9Kk1cR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_EXPLICIT_BZERO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-9Kk1cR'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5d4e1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5d4e1.dir/build.make CMakeFiles/cmTC_5d4e1.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-9Kk1cR'
+        Building C object CMakeFiles/cmTC_5d4e1.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE -o CMakeFiles/cmTC_5d4e1.dir/CheckSymbolExists.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-9Kk1cR/CheckSymbolExists.c
+        Linking C executable cmTC_5d4e1
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d4e1.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64  CMakeFiles/cmTC_5d4e1.dir/CheckSymbolExists.c.o -o cmTC_5d4e1
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-9Kk1cR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/usr/local/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/common/CMakeLists.txt:112 (check_symbol_exists)"
+    checks:
+      - "Looking for memset_s"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_MEMSET_S"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1892e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1892e.dir/build.make CMakeFiles/cmTC_1892e.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1'
+        Building C object CMakeFiles/cmTC_1892e.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE -o CMakeFiles/cmTC_1892e.dir/CheckSymbolExists.c.o -c /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1/CheckSymbolExists.c
+        /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1/CheckSymbolExists.c: In function 'main':
+        /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1/CheckSymbolExists.c:8:19: error: 'memset_s' undeclared (first use in this function); did you mean 'memset'?
+            8 |   return ((int*)(&memset_s))[argc];
+              |                   ^~~~~~~~
+              |                   memset
+        /home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[1]: *** [CMakeFiles/cmTC_1892e.dir/build.make:78: CMakeFiles/cmTC_1892e.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeScratch/TryCompile-GHM4V1'
+        gmake: *** [Makefile:127: cmTC_1892e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "src/kem/bike/CMakeLists.txt:61 (try_compile)"
+    directories:
+      source: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeTmp"
+      binary: "/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CAN_COMPILE_VPCLMUL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_18e11/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_18e11.dir/build.make CMakeFiles/cmTC_18e11.dir/build
+        gmake[1]: Entering directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_18e11.dir/gf2x_mul_base_vpclmul.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=gnu11 -fPIE   -mvpclmulqdq -mavx512f -mavx512bw -mavx512dq -o CMakeFiles/cmTC_18e11.dir/gf2x_mul_base_vpclmul.c.o -c /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:18:14: error: unknown type name '__m512i'
+           18 | mul2_512(OUT __m512i *h, OUT __m512i *l, IN const __m512i a, IN const __m512i b)
+              |              ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:18:30: error: unknown type name '__m512i'
+           18 | mul2_512(OUT __m512i *h, OUT __m512i *l, IN const __m512i a, IN const __m512i b)
+              |                              ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:18:51: error: unknown type name '__m512i'
+           18 | mul2_512(OUT __m512i *h, OUT __m512i *l, IN const __m512i a, IN const __m512i b)
+              |                                                   ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:18:71: error: unknown type name '__m512i'
+           18 | mul2_512(OUT __m512i *h, OUT __m512i *l, IN const __m512i a, IN const __m512i b)
+              |                                                                       ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:33:37: error: unknown type name '__m512i'
+           33 | _INLINE_ void gf2x_mul8_512_int(OUT __m512i *zh,
+              |                                     ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:34:37: error: unknown type name '__m512i'
+           34 |                                 OUT __m512i *    zl,
+              |                                     ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:35:42: error: unknown type name '__m512i'
+           35 |                                 IN const __m512i a,
+              |                                          ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:36:42: error: unknown type name '__m512i'
+           36 |                                 IN const __m512i b)
+              |                                          ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c: In function 'gf2x_mul_base_vpclmul':
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:93:9: error: unknown type name '__m512i'
+           93 |   const __m512i a0 = LOAD(a);
+              |         ^~~~~~~
+        In file included from /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:13:
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/x86_64_intrinsic.h:38:27: error: implicit declaration of function '_mm512_loadu_si512' [-Wimplicit-function-declaration]
+           38 | #  define LOAD(mem)       _mm512_loadu_si512((mem))
+              |                           ^~~~~~~~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:93:22: note: in expansion of macro 'LOAD'
+           93 |   const __m512i a0 = LOAD(a);
+              |                      ^~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:94:9: error: unknown type name '__m512i'
+           94 |   const __m512i a1 = LOAD(&a[QWORDS_IN_ZMM]);
+              |         ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:95:9: error: unknown type name '__m512i'
+           95 |   const __m512i b0 = LOAD(b);
+              |         ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:96:9: error: unknown type name '__m512i'
+           96 |   const __m512i b1 = LOAD(&b[QWORDS_IN_ZMM]);
+              |         ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:98:3: error: unknown type name '__m512i'
+           98 |   __m512i hi[2], lo[2], mi[2];
+              |   ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:100:3: error: implicit declaration of function 'gf2x_mul8_512_int' [-Wimplicit-function-declaration]
+          100 |   gf2x_mul8_512_int(&lo[1], &lo[0], a0, b0);
+              |   ^~~~~~~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:104:3: error: unknown type name '__m512i'
+          104 |   __m512i m = lo[1] ^ hi[0];
+              |   ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/x86_64_intrinsic.h:39:27: error: implicit declaration of function '_mm512_storeu_si512' [-Wimplicit-function-declaration]
+           39 | #  define STORE(mem, reg) _mm512_storeu_si512((mem), (reg))
+              |                           ^~~~~~~~~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:106:3: note: in expansion of macro 'STORE'
+          106 |   STORE(&c[0 * QWORDS_IN_ZMM], lo[0]);
+              |   ^~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c: In function 'gf2x_sqr_vpclmul':
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:114:3: error: unknown type name '__m512i'
+          114 |   __m512i va, vm, vr0, vr1;
+              |   ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/x86_64_intrinsic.h:111:30: error: implicit declaration of function '_mm512_set_epi64' [-Wimplicit-function-declaration]
+          111 | #  define SET_I64(...)       _mm512_set_epi64(__VA_ARGS__)
+              |                              ^~~~~~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:119:8: note: in expansion of macro 'SET_I64'
+          119 |   vm = SET_I64(7, 3, 6, 2, 5, 1, 4, 0);
+              |        ^~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/x86_64_intrinsic.h:135:36: error: implicit declaration of function '_mm512_permutexvar_epi64' [-Wimplicit-function-declaration]
+          135 | #  define PERMXVAR_I64(idx, a)     _mm512_permutexvar_epi64(idx, a)
+              |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:123:10: note: in expansion of macro 'PERMXVAR_I64'
+          123 |     va = PERMXVAR_I64(vm, va);
+              |          ^~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:15:26: error: implicit declaration of function '_mm512_clmulepi64_epi128' [-Wimplicit-function-declaration]
+           15 | #define CLMUL(x, y, imm) _mm512_clmulepi64_epi128((x), (y), (imm))
+              |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+        /home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/bike/additional_r4/gf2x_mul_base_vpclmul.c:125:11: note: in expansion of macro 'CLMUL'
+          125 |     vr0 = CLMUL(va, va, 0x00);
+              |           ^~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_18e11.dir/build.make:78: CMakeFiles/cmTC_18e11.dir/gf2x_mul_base_vpclmul.c.o] Error 1
+        gmake[1]: Leaving directory '/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out/build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_18e11/fast] Error 2
+        
+      exitCode: 2
+...

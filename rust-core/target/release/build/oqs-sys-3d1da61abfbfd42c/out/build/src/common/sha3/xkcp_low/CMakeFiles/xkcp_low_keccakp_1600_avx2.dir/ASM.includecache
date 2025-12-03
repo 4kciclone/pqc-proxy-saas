@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/common/sha3/xkcp_low/KeccakP-1600/avx2/KeccakP-1600-AVX2.S
+

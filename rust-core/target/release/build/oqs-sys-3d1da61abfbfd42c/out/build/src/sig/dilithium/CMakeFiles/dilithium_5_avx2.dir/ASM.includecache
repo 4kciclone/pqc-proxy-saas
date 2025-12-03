@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/align.h
+stdint.h
+-
+immintrin.h
+-
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/config.h
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/consts.h
+params.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/params.h
+align.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/align.h
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/invntt.S
+consts.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/consts.h
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/ntt.S
+consts.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/consts.h
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/params.h
+config.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/config.h
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/pointwise.S
+params.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/params.h
+consts.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/consts.h
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/shuffle.S
+consts.h
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/sig/dilithium/pqcrystals-dilithium_dilithium5_avx2/consts.h
+

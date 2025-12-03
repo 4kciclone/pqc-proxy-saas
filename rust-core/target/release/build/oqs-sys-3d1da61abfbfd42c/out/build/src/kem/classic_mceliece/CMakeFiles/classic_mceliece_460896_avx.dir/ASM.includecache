@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/consts.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/syndrome_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/transpose_64x128_sp_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/transpose_64x256_sp_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/update_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/vec128_mul_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/vec256_ama_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/vec256_maa_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/vec256_mul_asm.S
+
+/home/reaper/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/oqs-sys-0.8.0/liboqs/src/kem/classic_mceliece/pqclean_mceliece460896_avx/vec_reduce_asm.S
+

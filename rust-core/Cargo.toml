@@ -1,0 +1,12 @@
+[package]
+name = "pqc_core"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+# CORREÇÃO: "kem" virou "kems" e "sig" virou "sigs"
+oqs = { version = "0.8", features = ["kems", "sigs"] }
+libc = "0.2"

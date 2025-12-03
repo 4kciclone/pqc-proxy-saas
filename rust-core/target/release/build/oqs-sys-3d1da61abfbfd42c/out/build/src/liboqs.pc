@@ -1,0 +1,10 @@
+prefix=/home/reaper/dev/pqc-proxy-saas/rust-core/target/release/build/oqs-sys-3d1da61abfbfd42c/out
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: liboqs
+Description: Library for quantum-safe cryptographic algorithms
+Version: 0.8.0
+Requires.private: openssl
+Cflags: -I${includedir}
+Libs: -L${libdir} -loqs
